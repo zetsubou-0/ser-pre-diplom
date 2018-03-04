@@ -4314,8 +4314,8 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:00:31.414 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:00:31.414 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
 04.03.2018 15:00:31.414 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
-04.03.2018 15:00:31.414 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,1043, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
-04.03.2018 15:00:31.414 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(294)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
+04.03.2018 15:00:31.414 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,1043, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:00:31.414 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(294)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
 04.03.2018 15:00:31.414 *ERROR* [FelixDispatchQueue] laser-services FrameworkEvent ERROR (org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.)
 org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:307)
@@ -4377,9 +4377,9 @@ org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a c
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.executeTasks(OsgiInstallerImpl.java:737)
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.run(OsgiInstallerImpl.java:287)
 	at java.lang.Thread.run(Unknown Source)
-04.03.2018 15:00:31.414 *INFO* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(294)] Could not obtain all required dependencies, getService returning null
-04.03.2018 15:00:31.414 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (294)))
-org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (294))
+04.03.2018 15:00:31.414 *INFO* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(294)] Could not obtain all required dependencies, getService returning null
+04.03.2018 15:00:31.414 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (294)))
+org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (294))
 	at org.apache.felix.framework.ServiceRegistrationImpl.getFactoryUnchecked(ServiceRegistrationImpl.java:380)
 	at org.apache.felix.framework.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:247)
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:350)
@@ -4524,7 +4524,7 @@ java.lang.Exception: Opening Stacktrace
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 04.03.2018 15:01:42.908 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
-04.03.2018 15:01:42.908 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,1043, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:01:42.908 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,1043, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:01:42.908 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [1044, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:01:42.908 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [1045, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:01:42.908 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPED
@@ -4701,13 +4701,13 @@ java.lang.Exception: Opening Stacktrace
 04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
 04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
-04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,1107, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,1107, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [1108, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [1109, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 15:01:43.304 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle laser-services [155]
 04.03.2018 15:01:49.169 *ERROR* [qtp826212259-354] org.apache.felix.http.jetty Exception while processing request to /content/laser/home-secure.html (java.lang.NullPointerException)
 java.lang.NullPointerException: null
-	at by.gstu.laser.imtermal.auth.AuthSpiHandler.extractCredentials(AuthSpiHandler.java:29)
+	at by.gstu.laser.imtermal.auth.AuthSpyHandler.extractCredentials(AuthSpiHandler.java:29)
 	at org.apache.sling.auth.core.impl.AuthenticationHandlerHolder.doExtractCredentials(AuthenticationHandlerHolder.java:76)
 	at org.apache.sling.auth.core.impl.AbstractAuthenticationHandlerHolder.extractCredentials(AbstractAuthenticationHandlerHolder.java:60)
 	at org.apache.sling.auth.core.impl.SlingAuthenticator.getAuthenticationInfo(SlingAuthenticator.java:727)
@@ -4743,7 +4743,7 @@ java.lang.NullPointerException: null
 	at java.lang.Thread.run(Unknown Source)
 04.03.2018 15:01:52.940 *ERROR* [qtp826212259-592] org.apache.felix.http.jetty Exception while processing request to /content/laser/home-secure.html (java.lang.NullPointerException)
 java.lang.NullPointerException: null
-	at by.gstu.laser.imtermal.auth.AuthSpiHandler.extractCredentials(AuthSpiHandler.java:29)
+	at by.gstu.laser.imtermal.auth.AuthSpyHandler.extractCredentials(AuthSpiHandler.java:29)
 	at org.apache.sling.auth.core.impl.AuthenticationHandlerHolder.doExtractCredentials(AuthenticationHandlerHolder.java:76)
 	at org.apache.sling.auth.core.impl.AbstractAuthenticationHandlerHolder.extractCredentials(AbstractAuthenticationHandlerHolder.java:60)
 	at org.apache.sling.auth.core.impl.SlingAuthenticator.getAuthenticationInfo(SlingAuthenticator.java:727)
@@ -4788,7 +4788,7 @@ java.lang.NullPointerException: null
 04.03.2018 15:02:23.042 *INFO* [pool-24-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 15:02:23.342 *INFO* [JcrInstaller.2] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
 04.03.2018 15:02:23.364 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
-04.03.2018 15:02:23.365 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,1107, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:02:23.365 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,1107, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:02:23.366 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [1108, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:02:23.367 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [1109, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:02:23.369 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPED
@@ -4803,9 +4803,9 @@ java.lang.NullPointerException: null
 04.03.2018 15:02:23.390 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:02:23.391 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
 04.03.2018 15:02:23.391 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
-04.03.2018 15:02:23.392 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,1111, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
-04.03.2018 15:02:23.393 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(296)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
-04.03.2018 15:02:23.394 *INFO* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(296)] Could not obtain all required dependencies, getService returning null
+04.03.2018 15:02:23.392 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,1111, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:02:23.393 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(296)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
+04.03.2018 15:02:23.394 *INFO* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(296)] Could not obtain all required dependencies, getService returning null
 04.03.2018 15:02:23.394 *ERROR* [FelixDispatchQueue] laser-services FrameworkEvent ERROR (org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.)
 org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:307)
@@ -4867,8 +4867,8 @@ org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a c
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.executeTasks(OsgiInstallerImpl.java:737)
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.run(OsgiInstallerImpl.java:287)
 	at java.lang.Thread.run(Unknown Source)
-04.03.2018 15:02:23.394 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (296)))
-org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (296))
+04.03.2018 15:02:23.394 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (296)))
+org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (296))
 	at org.apache.felix.framework.ServiceRegistrationImpl.getFactoryUnchecked(ServiceRegistrationImpl.java:380)
 	at org.apache.felix.framework.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:247)
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:350)
@@ -4922,7 +4922,7 @@ org.osgi.framework.ServiceException: Service factory returned null. (Component: 
 04.03.2018 15:02:23.398 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle laser-services [155]
 04.03.2018 15:02:37.946 *INFO* [FelixShutdown] org.apache.felix.framework BundleEvent STOPPING
 04.03.2018 15:02:37.946 *INFO* [FelixStartLevel] laser-services BundleEvent STOPPING
-04.03.2018 15:02:37.946 *INFO* [FelixStartLevel] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,1111, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:02:37.946 *INFO* [FelixStartLevel] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,1111, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:02:37.946 *INFO* [FelixStartLevel] org.apache.sling.models.impl Service [1112, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:02:37.946 *INFO* [FelixStartLevel] org.apache.sling.adapter Service [1113, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:02:37.946 *INFO* [FelixStartLevel] laser-services BundleEvent STOPPED
@@ -6997,7 +6997,7 @@ java.lang.Exception: Opening Stacktrace
 04.03.2018 15:03:02.260 *INFO* [FelixStartLevel] org.apache.sling.xss BundleEvent STARTED
 04.03.2018 15:03:02.261 *INFO* [FelixStartLevel] laser-services BundleEvent RESOLVED
 04.03.2018 15:03:02.261 *INFO* [FelixStartLevel] laser-services BundleEvent STARTING
-04.03.2018 15:03:02.264 *INFO* [FelixStartLevel] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,426, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:03:02.264 *INFO* [FelixStartLevel] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,426, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 15:03:02.277 *INFO* [FelixStartLevel] org.apache.sling.adapter Service [428, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 15:03:02.278 *INFO* [FelixStartLevel] org.apache.sling.models.impl Service [427, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 15:03:02.279 *INFO* [FelixStartLevel] laser-services BundleEvent STARTED
@@ -7313,8 +7313,8 @@ java.lang.Exception: Opening Stacktrace
 04.03.2018 15:03:03.269 *INFO* [Apache Sling Repository Startup Thread] org.apache.sling.auth.form.impl.FormAuthenticationHandler Setting session timeout 30 minutes
 04.03.2018 15:03:03.269 *INFO* [Apache Sling Repository Startup Thread] org.apache.sling.auth.form.impl.FormAuthenticationHandler Storing tokens in d:\Server\Sling\9\ser-laser\sling\felix\bundle97\data\cookie-tokens.bin
 04.03.2018 15:03:03.271 *INFO* [Apache Sling Repository Startup Thread] org.apache.sling.auth.form.impl.TokenStore Seeding the secure random number generator can take up to several minutes on some operating systems depending upon environment factors. If this is a problem for you, set the system property 'java.security.egd' to 'file:/dev/./urandom' or enable the Fast Seed Generator in the Web Console
-04.03.2018 15:03:03.357 *WARN* [Apache Sling Repository Startup Thread] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(290)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
-04.03.2018 15:03:03.357 *INFO* [Apache Sling Repository Startup Thread] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(290)] Could not obtain all required dependencies, getService returning null
+04.03.2018 15:03:03.357 *WARN* [Apache Sling Repository Startup Thread] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(290)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
+04.03.2018 15:03:03.357 *INFO* [Apache Sling Repository Startup Thread] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(290)] Could not obtain all required dependencies, getService returning null
 04.03.2018 15:03:03.359 *ERROR* [FelixDispatchQueue] laser-services FrameworkEvent ERROR (org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.)
 org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:307)
@@ -7475,8 +7475,8 @@ org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a c
 	at org.apache.sling.jcr.base.AbstractSlingRepositoryManager.initializeAndRegisterRepositoryService(AbstractSlingRepositoryManager.java:492)
 	at org.apache.sling.jcr.base.AbstractSlingRepositoryManager.access$300(AbstractSlingRepositoryManager.java:85)
 	at org.apache.sling.jcr.base.AbstractSlingRepositoryManager$4.run(AbstractSlingRepositoryManager.java:455)
-04.03.2018 15:03:03.359 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (290)))
-org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (290))
+04.03.2018 15:03:03.359 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (290)))
+org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (290))
 	at org.apache.felix.framework.ServiceRegistrationImpl.getFactoryUnchecked(ServiceRegistrationImpl.java:380)
 	at org.apache.felix.framework.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:247)
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:350)
@@ -7887,7 +7887,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:06:09.659 *INFO* [pool-13-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 15:06:09.675 *INFO* [pool-13-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 15:06:10.008 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 15:06:10.024 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,426, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:06:10.024 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,426, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:06:10.024 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [428, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:06:10.024 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [427, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:06:10.024 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -8076,8 +8076,8 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:06:10.409 *INFO* [FelixDispatchQueue] org.apache.felix.framework FrameworkEvent PACKAGES REFRESHED
 04.03.2018 15:06:10.425 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:06:10.425 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 15:06:10.440 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(291)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
-04.03.2018 15:06:10.440 *INFO* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(291)] Could not obtain all required dependencies, getService returning null
+04.03.2018 15:06:10.440 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(291)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
+04.03.2018 15:06:10.440 *INFO* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(291)] Could not obtain all required dependencies, getService returning null
 04.03.2018 15:06:10.440 *ERROR* [FelixDispatchQueue] laser-services FrameworkEvent ERROR (org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.)
 org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:307)
@@ -8139,9 +8139,9 @@ org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a c
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.executeTasks(OsgiInstallerImpl.java:737)
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.run(OsgiInstallerImpl.java:287)
 	at java.lang.Thread.run(Unknown Source)
-04.03.2018 15:06:10.440 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,805, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
-04.03.2018 15:06:10.440 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (291)))
-org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpiHandler (291))
+04.03.2018 15:06:10.440 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,805, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:06:10.440 *ERROR* [FelixDispatchQueue] org.apache.sling.auth.core FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (291)))
+org.osgi.framework.ServiceException: Service factory returned null. (Component: by.gstu.laser.imtermal.auth.AuthSpyHandler (291))
 	at org.apache.felix.framework.ServiceRegistrationImpl.getFactoryUnchecked(ServiceRegistrationImpl.java:380)
 	at org.apache.felix.framework.ServiceRegistrationImpl.getService(ServiceRegistrationImpl.java:247)
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:350)
@@ -8259,7 +8259,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:10:39.572 *INFO* [pool-14-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 15:10:39.572 *INFO* [pool-14-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 15:10:39.662 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 15:10:39.719 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,805, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:10:39.719 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,805, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:10:39.722 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [807, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:10:39.722 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [806, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:10:39.723 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -8274,7 +8274,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:10:39.738 *INFO* [FelixDispatchQueue] org.apache.felix.framework FrameworkEvent PACKAGES REFRESHED
 04.03.2018 15:10:39.757 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:10:39.757 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 15:10:39.763 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,810, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:10:39.763 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,810, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 15:10:39.763 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [812, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 15:10:39.778 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [811, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 15:10:39.778 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
@@ -8343,7 +8343,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:17:25.845 *INFO* [pool-15-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 15:17:25.845 *INFO* [pool-15-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 15:17:26.261 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 15:17:26.291 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,810, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:17:26.291 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,810, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:17:26.294 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [812, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:17:26.295 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [811, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:17:26.295 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -8520,9 +8520,9 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:17:26.625 *INFO* [FelixDispatchQueue] org.apache.felix.framework FrameworkEvent PACKAGES REFRESHED
 04.03.2018 15:17:26.641 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:17:26.641 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 15:17:26.688 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(293)] bind method [bindWrappedAuthHandler] not found; Component will fail
-04.03.2018 15:17:26.688 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(293)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
-04.03.2018 15:17:26.688 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(293)] bind method [bindWrappedAuthHandler] not found
+04.03.2018 15:17:26.688 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(293)] bind method [bindWrappedAuthHandler] not found; Component will fail
+04.03.2018 15:17:26.688 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(293)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
+04.03.2018 15:17:26.688 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(293)] bind method [bindWrappedAuthHandler] not found
 04.03.2018 15:17:26.688 *ERROR* [FelixDispatchQueue] laser-services FrameworkEvent ERROR (org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.)
 org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:307)
@@ -8584,14 +8584,14 @@ org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a c
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.executeTasks(OsgiInstallerImpl.java:737)
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.run(OsgiInstallerImpl.java:287)
 	at java.lang.Thread.run(Unknown Source)
-04.03.2018 15:17:39.810 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,873, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:17:39.810 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,873, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 15:17:39.810 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [875, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 15:17:39.810 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [874, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 15:17:39.810 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
 04.03.2018 15:17:39.810 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle laser-services [155]
 04.03.2018 15:18:11.860 *ERROR* [qtp1344941356-52] org.apache.felix.http.jetty Exception while processing request to /content/laser/home-secure.html/j_security_check (java.lang.NullPointerException)
 java.lang.NullPointerException: null
-	at by.gstu.laser.imtermal.auth.AuthSpiHandler.extractCredentials(AuthSpiHandler.java:35)
+	at by.gstu.laser.imtermal.auth.AuthSpyHandler.extractCredentials(AuthSpiHandler.java:35)
 	at org.apache.sling.auth.core.impl.AuthenticationHandlerHolder.doExtractCredentials(AuthenticationHandlerHolder.java:76)
 	at org.apache.sling.auth.core.impl.AbstractAuthenticationHandlerHolder.extractCredentials(AbstractAuthenticationHandlerHolder.java:60)
 	at org.apache.sling.auth.core.impl.SlingAuthenticator.getAuthenticationInfo(SlingAuthenticator.java:727)
@@ -8670,10 +8670,10 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:18:51.789 *INFO* [pool-16-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 15:18:51.789 *INFO* [pool-16-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 15:18:52.253 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 15:18:57.290 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(293)] Timeout waiting for reg change to complete unregistered
-04.03.2018 15:18:57.413 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(293)] unbind method [unbindWrappedAuthHandler] not found; Component will fail
-04.03.2018 15:18:57.413 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(293)] unbind method [unbindWrappedAuthHandler] not found
-04.03.2018 15:18:57.413 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,873, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:18:57.290 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(293)] Timeout waiting for reg change to complete unregistered
+04.03.2018 15:18:57.413 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(293)] unbind method [unbindWrappedAuthHandler] not found; Component will fail
+04.03.2018 15:18:57.413 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(293)] unbind method [unbindWrappedAuthHandler] not found
+04.03.2018 15:18:57.413 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,873, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:18:57.413 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [875, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:18:57.413 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [874, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:18:57.428 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -8688,9 +8688,9 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:18:57.444 *INFO* [FelixDispatchQueue] org.apache.felix.framework FrameworkEvent PACKAGES REFRESHED
 04.03.2018 15:18:57.460 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:18:57.460 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 15:18:57.484 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(294)] bind method [bindWrappedAuthHandler] not found; Component will fail
-04.03.2018 15:18:57.485 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(294)] bind method [bindWrappedAuthHandler] not found
-04.03.2018 15:18:57.485 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,878, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:18:57.484 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(294)] bind method [bindWrappedAuthHandler] not found; Component will fail
+04.03.2018 15:18:57.485 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(294)] bind method [bindWrappedAuthHandler] not found
+04.03.2018 15:18:57.485 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,878, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 15:18:57.492 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [880, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 15:18:57.494 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [879, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 15:18:57.495 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
@@ -8698,7 +8698,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:19:51.784 *INFO* [oak-repository-executor-1] org.apache.sling.jcr.oak.server Service [881, [org.apache.jackrabbit.oak.api.jmx.SessionMBean]] ServiceEvent REGISTERED
 04.03.2018 15:20:08.653 *ERROR* [qtp1344941356-49] org.apache.felix.http.jetty Exception while processing request to /content/laser/home-secure.html/j_security_check (java.lang.NullPointerException)
 java.lang.NullPointerException: null
-	at by.gstu.laser.imtermal.auth.AuthSpiHandler.extractCredentials(AuthSpiHandler.java:35)
+	at by.gstu.laser.imtermal.auth.AuthSpyHandler.extractCredentials(AuthSpiHandler.java:35)
 	at org.apache.sling.auth.core.impl.AuthenticationHandlerHolder.doExtractCredentials(AuthenticationHandlerHolder.java:76)
 	at org.apache.sling.auth.core.impl.AbstractAuthenticationHandlerHolder.extractCredentials(AbstractAuthenticationHandlerHolder.java:60)
 	at org.apache.sling.auth.core.impl.SlingAuthenticator.getAuthenticationInfo(SlingAuthenticator.java:727)
@@ -8813,9 +8813,9 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:20:17.862 *INFO* [pool-17-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 15:20:17.864 *INFO* [pool-17-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 15:20:18.269 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 15:20:18.302 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,878, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
-04.03.2018 15:20:18.304 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(294)] unbind method [unbindWrappedAuthHandler] not found; Component will fail
-04.03.2018 15:20:18.304 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(294)] unbind method [unbindWrappedAuthHandler] not found
+04.03.2018 15:20:18.302 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,878, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:20:18.304 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(294)] unbind method [unbindWrappedAuthHandler] not found; Component will fail
+04.03.2018 15:20:18.304 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(294)] unbind method [unbindWrappedAuthHandler] not found
 04.03.2018 15:20:18.306 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [880, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:20:18.306 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [879, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:20:18.306 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -8830,9 +8830,9 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:20:18.338 *INFO* [FelixDispatchQueue] org.apache.felix.framework FrameworkEvent PACKAGES REFRESHED
 04.03.2018 15:20:18.338 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:20:18.338 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 15:20:18.369 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(295)] bind method [bindWrappedAuthHandler] not found; Component will fail
-04.03.2018 15:20:18.369 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(295)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
-04.03.2018 15:20:18.369 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(295)] bind method [bindWrappedAuthHandler] not found
+04.03.2018 15:20:18.369 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(295)] bind method [bindWrappedAuthHandler] not found; Component will fail
+04.03.2018 15:20:18.369 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(295)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
+04.03.2018 15:20:18.369 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(295)] bind method [bindWrappedAuthHandler] not found
 04.03.2018 15:20:18.369 *ERROR* [FelixDispatchQueue] laser-services FrameworkEvent ERROR (org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.)
 org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:307)
@@ -8894,14 +8894,14 @@ org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a c
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.executeTasks(OsgiInstallerImpl.java:737)
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.run(OsgiInstallerImpl.java:287)
 	at java.lang.Thread.run(Unknown Source)
-04.03.2018 15:20:18.369 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,882, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:20:18.369 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,882, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 15:20:18.369 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [884, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 15:20:18.369 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [883, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 15:20:18.385 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
 04.03.2018 15:20:18.385 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Started bundle laser-services [155]
 04.03.2018 15:21:59.533 *ERROR* [qtp1344941356-54] org.apache.felix.http.jetty Exception while processing request to /content/laser/home-secure.html (java.lang.NullPointerException)
 java.lang.NullPointerException: null
-	at by.gstu.laser.imtermal.auth.AuthSpiHandler.extractCredentials(AuthSpiHandler.java:35)
+	at by.gstu.laser.imtermal.auth.AuthSpyHandler.extractCredentials(AuthSpiHandler.java:35)
 	at org.apache.sling.auth.core.impl.AuthenticationHandlerHolder.doExtractCredentials(AuthenticationHandlerHolder.java:76)
 	at org.apache.sling.auth.core.impl.AbstractAuthenticationHandlerHolder.extractCredentials(AbstractAuthenticationHandlerHolder.java:60)
 	at org.apache.sling.auth.core.impl.SlingAuthenticator.getAuthenticationInfo(SlingAuthenticator.java:727)
@@ -8977,10 +8977,10 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:23:52.173 *INFO* [pool-18-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 15:23:52.175 *INFO* [pool-18-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 15:23:52.335 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 15:23:57.396 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(295)] Timeout waiting for reg change to complete unregistered
-04.03.2018 15:23:57.465 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(295)] unbind method [unbindWrappedAuthHandler] not found; Component will fail
-04.03.2018 15:23:57.465 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(295)] unbind method [unbindWrappedAuthHandler] not found
-04.03.2018 15:23:57.465 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,882, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 15:23:57.396 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(295)] Timeout waiting for reg change to complete unregistered
+04.03.2018 15:23:57.465 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(295)] unbind method [unbindWrappedAuthHandler] not found; Component will fail
+04.03.2018 15:23:57.465 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(295)] unbind method [unbindWrappedAuthHandler] not found
+04.03.2018 15:23:57.465 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,882, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 15:23:57.481 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [884, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 15:23:57.481 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [883, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 15:23:57.481 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -8995,7 +8995,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 15:23:57.496 *INFO* [FelixDispatchQueue] org.apache.felix.framework FrameworkEvent PACKAGES REFRESHED
 04.03.2018 15:23:57.518 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 15:23:57.518 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 15:23:57.696 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(296)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
+04.03.2018 15:23:57.696 *WARN* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(296)] Could not get service from ref [org.apache.sling.auth.core.spi.AuthenticationHandler]
 04.03.2018 15:23:57.696 *ERROR* [FelixDispatchQueue] laser-services FrameworkEvent ERROR (org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.)
 org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a cycle.
 	at org.apache.felix.framework.ServiceRegistry.getService(ServiceRegistry.java:307)
@@ -9057,7 +9057,7 @@ org.osgi.framework.ServiceException: ServiceFactory.getService() resulted in a c
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.executeTasks(OsgiInstallerImpl.java:737)
 	at org.apache.sling.installer.core.impl.OsgiInstallerImpl.run(OsgiInstallerImpl.java:287)
 	at java.lang.Thread.run(Unknown Source)
-04.03.2018 15:23:57.696 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,886, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 15:23:57.696 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,886, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 15:23:57.696 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [888, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 15:23:57.696 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [887, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 15:23:57.696 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
@@ -9172,8 +9172,8 @@ java.lang.Exception: Opening Stacktrace
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
 	at java.lang.Thread.run(Unknown Source)
 04.03.2018 16:34:46.436 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 16:34:51.472 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpiHandler(296)] Timeout waiting for reg change to complete unregistered
-04.03.2018 16:34:51.510 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,886, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 16:34:51.472 *ERROR* [OsgiInstallerImpl] laser-services [by.gstu.laser.imtermal.auth.AuthSpyHandler(296)] Timeout waiting for reg change to complete unregistered
+04.03.2018 16:34:51.510 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,886, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 16:34:51.510 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [888, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 16:34:51.510 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [887, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 16:34:51.510 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -9188,7 +9188,7 @@ java.lang.Exception: Opening Stacktrace
 04.03.2018 16:34:51.525 *INFO* [OsgiInstallerImpl] org.apache.sling.audit.osgi.installer Done refreshing 1 bundles
 04.03.2018 16:34:51.556 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 16:34:51.556 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 16:34:51.575 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,891, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 16:34:51.575 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,891, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 16:34:51.579 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [893, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 16:34:51.579 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [892, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 16:34:51.579 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
@@ -9238,7 +9238,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 16:36:42.842 *INFO* [pool-21-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 16:36:42.843 *INFO* [pool-21-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 16:36:43.290 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 16:36:43.374 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,891, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 16:36:43.374 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,891, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 16:36:43.376 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [893, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 16:36:43.377 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [892, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 16:36:43.378 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING
@@ -9435,7 +9435,7 @@ java.lang.Exception: Opening Stacktrace
 04.03.2018 16:36:43.692 *INFO* [FelixDispatchQueue] org.apache.felix.framework FrameworkEvent PACKAGES REFRESHED
 04.03.2018 16:36:43.700 *INFO* [OsgiInstallerImpl] laser-services BundleEvent RESOLVED
 04.03.2018 16:36:43.700 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTING
-04.03.2018 16:36:43.705 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,954, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
+04.03.2018 16:36:43.705 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,954, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent REGISTERED
 04.03.2018 16:36:43.710 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [956, [org.apache.sling.adapter.Adaption]] ServiceEvent REGISTERED
 04.03.2018 16:36:43.711 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [955, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent REGISTERED
 04.03.2018 16:36:43.712 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STARTED
@@ -9490,7 +9490,7 @@ java.lang.Exception: The session was created here:
 04.03.2018 17:14:31.205 *INFO* [pool-22-thread-1] org.apache.jackrabbit.vault.packaging.impl.ZipVaultPackage Extracting laser:laser-view:1.0.0-SNAPSHOT completed.
 04.03.2018 17:14:31.206 *INFO* [pool-22-thread-1] com.composum.sling.core.pckgmgr.PackageJobExecutor installation of package 'laser-view' done
 04.03.2018 17:14:31.262 *INFO* [JcrInstaller.1] org.apache.sling.installer.provider.jcr.impl.JcrInstaller Registering resource with OSGi installer: [InstallableResource, priority=200, id=/apps/laser/install/laser-services-1.0.0-SNAPSHOT.jar]
-04.03.2018 17:14:31.278 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpiHandler,954, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
+04.03.2018 17:14:31.278 *INFO* [OsgiInstallerImpl] laser-services Service [by.gstu.laser.imtermal.auth.AuthSpyHandler,954, [org.apache.sling.auth.core.spi.AuthenticationHandler]] ServiceEvent UNREGISTERING
 04.03.2018 17:14:31.281 *INFO* [OsgiInstallerImpl] org.apache.sling.adapter Service [956, [org.apache.sling.adapter.Adaption]] ServiceEvent UNREGISTERING
 04.03.2018 17:14:31.282 *INFO* [OsgiInstallerImpl] org.apache.sling.models.impl Service [955, [org.apache.sling.api.adapter.AdapterFactory]] ServiceEvent UNREGISTERING
 04.03.2018 17:14:31.282 *INFO* [OsgiInstallerImpl] laser-services BundleEvent STOPPING

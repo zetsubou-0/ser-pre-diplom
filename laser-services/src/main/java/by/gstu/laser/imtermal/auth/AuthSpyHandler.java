@@ -15,9 +15,9 @@ import java.io.IOException;
 @Properties({
         @Property(name = "path", value = "/content/laser")
 })
-public class AuthSpiHandler implements AuthenticationHandler {
+public class AuthSpyHandler implements AuthenticationHandler {
 
-    private static final Logger LOG = LoggerFactory.getLogger(AuthSpiHandler.class);
+    private static final Logger LOG = LoggerFactory.getLogger(AuthSpyHandler.class);
 
     @Reference
     private AuthenticationHandler handler;
