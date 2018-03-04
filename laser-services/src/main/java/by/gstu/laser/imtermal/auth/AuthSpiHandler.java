@@ -19,17 +19,17 @@ public class AuthSpiHandler implements AuthenticationHandler {
 
     private static final Logger LOG = LoggerFactory.getLogger(AuthSpiHandler.class);
 
-    @Reference(target = "(service.pid=org.apache.sling.auth.core.impl.HttpBasicAuthenticationHandler)")
+    @Reference
     private AuthenticationHandler handler;
 
     @Override
     public AuthenticationInfo extractCredentials(HttpServletRequest request, HttpServletResponse response) {
         final AuthenticationInfo info = handler.extractCredentials(request, response);
-        if (info != null) {
+        if (info != null && info.get("user.jcr.credentials") != null) {
             LOG.info("The following user [{}] has been connected to the system with [{}] auth type.",
                     info.getUser(), info.getAuthType());
         }
-        return info;
+        return null;
     }
 
     @Override
