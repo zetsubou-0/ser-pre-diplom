@@ -2,5 +2,5 @@
 <workspaceFilter version="1.0">
     <filter root="/content/laser"/>
     <filter root="/apps/laser"/>
-    <!--<filter root="/etc/clientlibs/laser"/>-->
+    <filter root="/etc/laser"/>
 </workspaceFilter>
