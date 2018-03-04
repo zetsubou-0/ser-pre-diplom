@@ -1,0 +1,1 @@
+java -Xmx4096m -XX:MaxPermSize=1024M -XX:-UseGCOverheadLimit -Duser.language=en -Djava.awt.headless=true -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=30303 -jar server.jar -p 4502
