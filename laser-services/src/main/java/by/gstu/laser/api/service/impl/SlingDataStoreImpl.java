@@ -14,6 +14,7 @@ import javax.jcr.Session;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Map;
@@ -44,7 +45,7 @@ public class SlingDataStoreImpl implements SlingDataStore {
             return StringUtils.EMPTY;
         }
         try {
-            return IOUtil.createImageFile(session, image, getRootPath(), name);
+            return IOUtil.createImageFile(session, image, getRootPath(), getFullName(name));
         } catch (RepositoryException e) {
             throw new IOException(e);
         }
@@ -57,10 +58,14 @@ public class SlingDataStoreImpl implements SlingDataStore {
             return StringUtils.EMPTY;
         }
         try {
-            return IOUtil.createFile(session, commands, getRootPath(), name);
+            return IOUtil.createFile(session, commands, getRootPath(), getFullName(name));
         } catch (RepositoryException e) {
             throw new IOException(e);
         }
+    }
+
+    private String getFullName(String name) {
+        return Calendar.getInstance().getTimeInMillis() + "-" + name;
     }
 
     private String getRootPath() {
