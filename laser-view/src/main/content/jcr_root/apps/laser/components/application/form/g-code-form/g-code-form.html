@@ -1,0 +1,8 @@
+<div id="g-code-form" data-sly-use.gCodeForm="by.gstu.laser.api.model.gui.form.GCodeForm">
+    <link rel="stylesheet" href="/etc/laser/libs/components/g-code-form/style.css">
+    <form method="POST" enctype="multipart/form-data" action="${gCodeForm.endPoint}">
+        <h2>${gCodeForm.title}</h2>
+        <input type="file" name="file" id="file" /> <br/>
+        <input type="submit" value="${gCodeForm.buttonText}" name="convert" id="convert" />
+    </form>
+</div>

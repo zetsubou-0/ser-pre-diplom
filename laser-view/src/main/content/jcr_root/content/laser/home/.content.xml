@@ -2,8 +2,16 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
           xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
           jcr:primaryType="sling:Folder"
+          jcr:title="Laser Main Page"
           sling:resourceType="laser/components/pages/laser">
-    <selection jcr:primaryType="sling:Folder"
-               dataSource="/etc/laser/data/options.json"
-               sling:resourceType="laser/components/html/selection"/>
+    <g-code-form
+            jcr:primaryType="sling:Folder"
+            title="Please upload an image"
+            endPoint="/bin/laser/gCode"
+            buttonText="Upload image"
+            sling:resourceType="laser/components/application/form/g-code-form"/>
+    <image-data
+            jcr:primaryType="sling:Folder"
+            saveLinkText="Download G Code Source"
+            sling:resourceType="laser/components/application/form/g-code-form"/>
 </jcr:root>

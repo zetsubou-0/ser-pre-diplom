@@ -5,12 +5,12 @@ import by.gstu.laser.api.service.impl.LaserConfig;
 public class GCodeModel {
     private final long horizontalPosition;
     private final long verticalPosition;
-    private final double speed;
+    private final long speed;
 
     public GCodeModel(LaserConfig config, long horizontalPosition, long verticalPosition, double focus) {
         this.horizontalPosition = horizontalPosition;
         this.verticalPosition = verticalPosition;
-        speed = config.getMinSpeed() + config.getPower() / (focus + config.getMinFocusDelta());
+        speed = Math.round(config.getMinSpeed() + config.getPower() / (focus + config.getMinFocusDelta()));
     }
 
     public long getHorizontalPosition() {
@@ -21,7 +21,7 @@ public class GCodeModel {
         return verticalPosition;
     }
 
-    public double getSpeed() {
+    public long getSpeed() {
         return speed;
     }
 }

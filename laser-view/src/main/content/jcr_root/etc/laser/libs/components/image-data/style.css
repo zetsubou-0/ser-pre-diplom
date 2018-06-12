@@ -1,0 +1,20 @@
+#image-data {
+    padding: 5px;
+}
+
+#image-data img {
+    width: 30%;
+    margin-left: 9%;
+    margin-right: 9%;
+}
+
+#image-data a {
+    display: block;
+    margin: auto;
+    padding: 20px;
+    color: #2b789f;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}

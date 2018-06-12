@@ -1,9 +1,13 @@
-package by.gstu.laser.api.command;
+package by.gstu.laser.imtermal.command;
 
 import by.gstu.laser.api.model.GCodeModel;
 
 public abstract class GCodeCommand {
     private final GCodeModel model;
+
+    public GCodeCommand() {
+        model = null;
+    }
 
     public GCodeCommand(GCodeModel model) {
         this.model = model;

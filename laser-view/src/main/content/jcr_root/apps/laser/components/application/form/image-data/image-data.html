@@ -1,0 +1,8 @@
+<div id="image-data" data-sly-use.imageData="by.gstu.laser.api.model.gui.form.ImageData" data-sly-test="${imageData.valid}">
+    <link rel="stylesheet" href="/etc/laser/libs/components/image-data/style.css">
+    <div class="image">
+        <image src="${imageData.originImageLink}"/>
+        <image src="${imageData.blackWhiteImageLink}"/>
+    </div>
+    <a href="${imageData.codeSourcePath}" target="_blank">${imageData.saveLinkText @ i18n}</a>
+</div>
