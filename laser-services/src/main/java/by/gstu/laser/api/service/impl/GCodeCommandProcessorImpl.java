@@ -28,6 +28,7 @@ public class GCodeCommandProcessorImpl implements GCodeCommandProcessor {
         final Stream<GCodeCommand> commands = models.stream()
                 .map(Move::new);
         return Stream.of(initialCommands, commands, terminalCommands)
+                .parallel()
                 .flatMap(Function.identity())
                 .collect(Collectors.toList());
     }

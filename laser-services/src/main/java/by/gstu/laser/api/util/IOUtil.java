@@ -48,7 +48,7 @@ public final class IOUtil {
     }
 
     public static String createFile(Session session, List<GCodeCommand> commands, String rootPath, String name) throws IOException, RepositoryException {
-        final String content = commands.stream()
+        final String content = commands.parallelStream()
                 .map(GCodeCommand::getCommandLine)
                 .collect(Collectors.joining())
                 .trim();
