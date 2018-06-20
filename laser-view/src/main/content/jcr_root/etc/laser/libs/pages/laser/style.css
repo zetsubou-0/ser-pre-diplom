@@ -1,3 +1,24 @@
-body {
+html, body {
+    width: 100%;
+    height: 100%;
+    border: 20px solid transparent;
+    border-image: url("/etc/laser/libs/pages/laser/assets/danger.png") 20 round;
+    margin: 0;
+    position: fixed;
+}
+
+html {
+    background-image: url("/etc/laser/libs/pages/laser/assets/laser.png");
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center center;
     background-color: beige;
+    right: 0;
+    bottom: 0;
+}
+
+body {
+    padding: 30px;
+    left: 0;
+    top: 0;
 }
